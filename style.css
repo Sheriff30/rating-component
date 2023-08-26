@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #121417;
+  color: #fff;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.rating-card,
+.thanks-card {
+  background: linear-gradient(to bottom left, #252d37, #121417);
+  width: 41.2rem;
+  height: 41.6rem;
+  padding: 3.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px hsla(0, 0%, 95%, 0.07);
+}
+@media only screen and (max-width: 28.125em) {
+  .rating-card,
+  .thanks-card {
+    width: 32.7rem;
+    height: 36rem;
+    padding: 2rem;
+  }
+}
+
+.rating-card {
+  z-index: 111;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.rating-card__mark {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #252d37;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-card__question {
+  color: #FFFFFF;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.rating-card__description {
+  color: #7c8798;
+}
+.rating-card__selection {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.rating-card__selection--number {
+  font-size: 1.6rem;
+  width: 5.1rem;
+  height: 5.1rem;
+  background-color: #252d37;
+  color: #7c8798;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  cursor: pointer;
+}
+.rating-card__btn {
+  cursor: pointer;
+  background-color: #fb7413;
+  width: auto;
+  height: 4.5rem;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  border-radius: 2.25rem;
+  font-weight: 700;
+}
+.rating-card__btn:hover {
+  background-color: #FFFFFF;
+  color: #fb7413;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+.thanks-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.thanks-card__img {
+  width: 16.2rem;
+  height: 10.8rem;
+}
+.thanks-card__selection {
+  width: 19.3rem;
+  height: 3.2rem;
+  background-color: #252d37;
+  color: #FC7614;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.25rem;
+}
+.thanks-card__title {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.thanks-card__suppourtmsg {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #969FAD;
+  line-height: 2.4rem;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.active-number {
+  background-color: #fb7413;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}/*# sourceMappingURL=style.css.map */
