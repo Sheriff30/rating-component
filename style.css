@@ -68,6 +68,7 @@ body {
 }
 .rating-card__description {
   color: #7c8798;
+  line-height: 2.4rem;
 }
 .rating-card__selection {
   list-style: none;
